@@ -5,16 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-    <table>
-    {% for result in results %}
-        <tr>
-            <td>{{ result["tad_pantherID"][0] }}</td>
-        </tr>
-    {% endfor %}
-    </table>
     <form method="post">
+        <label>Gene acc</label>
         <input type="text" name="term" id="term" value="{{ request.form['term'] }}" />
         <input type="submit" />
     </form>
+    {% if results %}
+        <label># of results:</label>
+        {{ result_count }}
+    {% endif %}
+    <table>
+    {% for result in results %}
+        <tr>
+            <td>{{ result["gene"] }}</td>
+            <td>{{ result["enhancer_ID"][0] }}</td>
+            <td>{{ result["coordinates"] }}</td>
+            <td>{{ result["enhancer_source"][0] }}</td>
+            <td>{{ result["enhancer_build"][0] }}</td>
+        </tr>
+    {% endfor %}
+    </table>
 </body>
 </html>

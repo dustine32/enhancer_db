@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+    {% for result in results %}
+        <tr>
+            <td>{{ result["tad_pantherID"][0] }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <form method="post">
+        <input type="text" name="term" id="term" value="{{ request.form['term'] }}" />
+        <input type="submit" />
+    </form>
+</body>
+</html>

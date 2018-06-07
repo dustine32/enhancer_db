@@ -1,0 +1,132 @@
+1	Adipose Subcutaneous
+2	Adipose Visceral Omentum
+3	Adrenal Gland
+4	Artery Aorta
+5	Artery Coronary
+6	Artery Tibial
+7	Brain Amygdala
+8	Brain Anterior cingulate cortex BA24
+9	Brain Caudate basal ganglia
+10	Brain Cerebellar Hemisphere
+11	Brain Cerebellum
+12	Brain Cortex
+13	Brain Frontal Cortex BA9
+14	Brain Hippocampus
+15	Brain Hypothalamus
+16	Brain Nucleus accumbens basal ganglia
+17	Brain Putamen basal ganglia
+18	Brain Spinal cord cervical c-1
+19	Brain Substantia nigra
+20	Breast Mammary Tissue
+21	Cells EBV-transformed lymphocytes
+22	Cells Transformed fibroblasts
+23	Colon Sigmoid
+24	Colon Transverse
+25	Esophagus Gastroesophageal Junction
+26	Esophagus Mucosa
+27	Esophagus Muscularis
+28	Heart Atrial Appendage
+29	Heart Left Ventricle
+30	Liver
+31	Lung
+32	Minor Salivary Gland
+33	Muscle Skeletal
+34	Nerve Tibial
+35	Ovary
+36	Pancreas
+37	Pituitary
+38	Prostate
+39	Skin Not Sun Exposed Suprapubic
+40	Skin Sun Exposed Lower leg
+41	Small Intestine Terminal Ileum
+42	Spleen
+43	Stomach
+44	Testis
+45	Thyroid
+46	Uterus
+47	Vagina
+48	Whole Blood
+49	B cell
+50	CD14-positive monocyte
+51	GM12878
+52	H1-hESC
+53	H9
+54	HCT116
+55	HeLa-S3
+56	HepG2
+57	IMR-90
+58	K562
+59	MCF-7
+60	Panc1
+61	T-cell
+62	adrenal gland
+63	astrocyte
+64	common myeloid progenitor, CD34-positive
+65	endothelial cell of umbilical vein
+66	female gonad
+67	fibroblast of dermis
+68	fibroblast of lung
+69	foreskin fibroblast
+70	foreskin melanocyte
+71	iPS DF 19.11
+72	iPS DF 6.9
+73	keratinocyte
+74	large intestine
+75	mammary epithelial cell
+76	mesenchymal stem cell
+77	mesendoderm
+78	muscle of leg
+79	muscle of trunk
+80	myotube
+81	natural killer cell
+82	neuronal stem cell
+83	pancrease
+84	placenta
+85	psoas muscle
+86	skeletal muscle myoblast
+87	small intestine
+88	stomach
+89	thymus
+90	trophoblast cell
+91	 blood vessels
+92	 branchial arch
+93	 cranial nerve
+94	 dorsal root ganglion
+95	 ear
+96	 eye
+97	 facial mesenchyme
+98	 forebrain
+99	 genital tubercle
+100	 heart
+101	 hindbrain (rhombencephalon)
+102	 limb
+103	 liver
+104	 melanocytes
+105	 mesenchyme derived from neural crest
+106	 midbrain (mesencephalon)
+107	 neural tube
+108	 nose
+109	 other
+110	 pancreas
+111	 somite
+112	 tail
+113	 trigeminal V (ganglion, cranial)
+114	NB4
+115	G401
+116	SK-MEL-5
+117	A549
+118	NCI-H460
+119	RPMI-7951
+120	SK-N-DZ_not_treated_and_treated_with_dimethyl_sulfoxide
+121	DLD1
+122	Caki2
+123	T47D
+124	ACHN
+125	LNCap_clone_FGC
+126	SK-N-MC
+127	SJCRH30
+128	brain_microvascular_endothelial_cell
+129	astrocyte_of_the_cerebellum
+130	endothelial_cell_of_hepatic_sinusoid
+131	brain_pericyte
+132	endometrial_microvascular_endothelial_cells

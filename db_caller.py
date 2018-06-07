@@ -1,5 +1,12 @@
 import requests
 
+ASSAY_LOOKUP = {
+"1": "ChIA-PET",
+"2": "single-tissue eQTL",
+"3": "Topologically Associated Domain",
+"4": "DNAse Hyersensitivity Region, histone acetylation marks"
+}
+
 def get_results(key, term):
     response = requests.get(url="http://68.181.125.171:8983/solr/enhancer/select?q={}:{}".format(key, term))
     data = response.json()

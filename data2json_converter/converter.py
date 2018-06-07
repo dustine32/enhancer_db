@@ -25,11 +25,13 @@ def generate_json(raw_file, suffix, col_map=column_mapping, parse_col=False):
     new_jsons = []
     with open(raw_file) as f:
         if parse_col:
-            col_map = f.readline().split("\t")
+            # print("hey")
+            col_map = f.readline().rstrip().split("\t")
         elif col_map is None:
             col_map = column_mapping
         elif col_map.__class__ is str:
             col_map = col_map.split(",")
+        # print(col_map)
         for l in f.readlines():
             new_line = {}
             line_values = l.split("\t")
@@ -61,11 +63,12 @@ def parse_file(raw_file=None, suffix=None, col_map=None, parse_col=False):
                 generate_json(raw_file, suffix, col_map, parse_col)
 
     else:
-        generate_json(raw_file, suffix, col_map)
+        generate_json(raw_file, suffix, col_map, parse_col)
 
 
 def main():
     args = parser.parse_args()
+    # print(args.parse_col)
     parse_file(args.raw_file, args.suffix, args.col_map, args.parse_col)
 
 if __name__ == "__main__":

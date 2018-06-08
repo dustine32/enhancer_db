@@ -45,6 +45,8 @@ def get_query(type, params):
                 enhancer = get_results(q_str)[0]
                 enhancer["coordinates"] = enhancer_coordinates(enhancer)
                 er["gene"] = item_with_key_suffix(er, "_gene")[1][0]
+                er["assay"] = item_with_key_suffix(er, "_assay")[1][0]
+                er["tissue"] = item_with_key_suffix(er, "tissue")[1][0]
                 joined_results.append({**er, **enhancer})
         # final_results = []
         # for r in results:

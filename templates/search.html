@@ -13,8 +13,16 @@
     {% if results %}
         <label># of results:</label>
         {{ result_count }}
-    {% endif %}
     <table>
+        <tr>
+            <th>Gene</th>
+            <th>EnhancerID</th>
+            <th>Coordinates</th>
+            <th>Source</th>
+            <th>Build</th>
+            <th>Assay</th>
+            <th>Tissue</th>
+        </tr>
     {% for result in results %}
         <tr>
             <td>{{ result["gene"] }}</td>
@@ -22,8 +30,11 @@
             <td>{{ result["coordinates"] }}</td>
             <td>{{ result["enhancer_source"][0] }}</td>
             <td>{{ result["enhancer_build"][0] }}</td>
+            <td>{{ result["assay"] }}</td>
+            <td>{{ result["tissue"] }}</td>
         </tr>
     {% endfor %}
     </table>
+    {% endif %}
 </body>
 </html>

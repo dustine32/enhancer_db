@@ -1,4 +1,6 @@
 import requests
+import os
+import yaml
 
 ASSAY_LOOKUP = {
 "1": "ChIA-PET",
@@ -7,8 +9,18 @@ ASSAY_LOOKUP = {
 "4": "DNAse Hyersensitivity Region, histone acetylation marks"
 }
 
+CONFIG_PROPERTIES = {}
+CONFIG_YAML = "config/config.yaml"
+if not os.path.isfile(CONFIG_YAML):
+    print("No config file found: {} - Please create config".format(CONFIG_YAML))
+    exit()
+else:
+    with open(CONFIG_YAML) as f:
+        CONFIG_PROPERTIES = yaml.safe_load(f)
+
 def get_results(q):
-    response = requests.get(url="http://68.181.125.171:8983/solr/enhancer/select?q={}&rows=100000".format(q))
+    solr_base_url = CONFIG_PROPERTIES["SOLR_BASE_URL"]
+    response = requests.get(url="{}/solr/enhancer/select?q={}&rows=100000".format(solr_base_url, q))
     data = response.json()
     try:
         results = data["response"]["docs"]
